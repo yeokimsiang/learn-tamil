@@ -9,7 +9,7 @@ const seedIdx = args.indexOf('--seed'); const seed = seedIdx >= 0 ? args.splice(
 const force = args.includes('--force'); const ids = args.filter(a => !a.startsWith('--'));
 const STYLE = 'simple black and white cartoon doodle, thick black ink outlines, white background, minimal, funny, no text, no words, no letters: ';
 const rawDir = path.join(root, 'tools/.raw'); fs.mkdirSync(rawDir, { recursive: true });
-const items = loadData(root).items.filter(i => i.img && (ids.length ? ids.includes(i.id) : true));
+const items = loadData(root).items.filter(i => i.img && (ids.length || !i.noImg) && (ids.length ? ids.includes(i.id) : true));
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 for (const it of items) {
   const outDir = process.env.IMG_OUT || path.join(root, 'docs/img'); fs.mkdirSync(outDir, { recursive: true });

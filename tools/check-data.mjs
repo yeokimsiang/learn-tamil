@@ -10,7 +10,7 @@ for (const it of D.items) {
     if (!it.tamil || !it.en) errs.push('word missing tamil/en: ' + it.id);
     if (!it.hooks || it.hooks.length < 2) errs.push('word needs >=2 hooks: ' + it.id);
     if (!it.img && !it.noImg) errs.push('word has no img prompt and no noImg flag: ' + it.id);
-    if (it.img && !fs.existsSync(path.join(root, 'docs/img', it.id + '.webp'))) warn.push('image file missing: ' + it.id);
+    if (it.img && !it.noImg && !fs.existsSync(path.join(root, 'docs/img', it.id + '.webp'))) warn.push('image file missing: ' + it.id);
     if (it.set && !D.palaces.find(p => p.id === it.set)) errs.push('unknown palace ' + it.set);
   }
   if (it.kind === 'pattern' && (!it.table || !it.drills || !it.drills.length)) errs.push('pattern incomplete: ' + it.id);

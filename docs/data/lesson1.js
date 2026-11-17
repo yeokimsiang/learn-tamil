@@ -83,7 +83,7 @@ window.TAMIL.items.push(
     pron: '“YENG-ay” (also written enge).', buildsOn: ['p_iay'],
     img: 'a confused furry yeti standing at a crossroads of signposts, scratching its head' },
 
-  { id: 'idhu', lesson: 1, kind: 'word', tamil: 'idhu', en: 'this',
+  { id: 'idhu', noImg: true, lesson: 1, kind: 'word', tamil: 'idhu', en: 'this',
     hooks: ['Holding a thing right up to your EYE: “EE-DHU… THIS one.”',
             '“IT, WHO?” — pointing at THIS thing in your hand.'],
     pron: '“ID-hu”, soft dh like “the”.', buildsOn: ['p_iay'],
@@ -162,7 +162,7 @@ window.TAMIL.items.push(
     pron: '“NEEN-ga”. Use with elders, strangers, or a group.', buildsOn: ['nee'],
     img: 'a young man kneeling politely and bowing to an elderly man' },
 
-  { id: 'en', lesson: 1, kind: 'word', tamil: 'en', en: 'my',
+  { id: 'en', noImg: true, lesson: 1, kind: 'word', tamil: 'en', en: 'my',
     hooks: ['MY PEN — a hand clutching a pen. (p)EN = my.',
             'The letter N stamped on all MY things.'],
     pron: '“EN”.',
@@ -263,7 +263,7 @@ window.TAMIL.items.push(
              ['I am doing (sei)', 'naan seiren'], ['You (polite) are studying', 'neenga padikringa'],
              ['I am well', 'naan nalla iruken'], ['You (informal) are eating', 'nee saapidre']] },
 
-  { id: 'pannu', lesson: 1, kind: 'word', tamil: 'pannu', en: 'do (verb root)',
+  { id: 'pannu', noImg: true, lesson: 1, kind: 'word', tamil: 'pannu', en: 'do (verb root)',
     hooks: ['Banging a frying PAN-NU — DOing something, anything!',
             'PAN: you DO the cooking.'],
     pron: '“PUN-nu”. pandre = (you) do.',
@@ -402,7 +402,7 @@ window.TAMIL.items.push(
     pron: '“ON-num”.',
     img: 'a person staring into a completely empty fridge' },
 
-  { id: 'soru', lesson: 1, kind: 'word', tamil: 'soru', en: 'rice (cooked)',
+  { id: 'soru', noImg: true, lesson: 1, kind: 'word', tamil: 'soru', en: 'rice (cooked)',
     hooks: ['Your back is SORE from carrying a giant sack of RICE — SO-RU.',
             'SORROW: no rice.'],
     pron: '“SO-ru”, tapped r.',
@@ -478,7 +478,7 @@ window.TAMIL.items.push(
     pron: '“PAA-ru”.',
     img: 'a tourist looking through binoculars from a mountain top' },
 
-  { id: 'moodu', lesson: 1, kind: 'word', tamil: 'moodu', en: 'close / shut (verb root)',
+  { id: 'moodu', noImg: true, lesson: 1, kind: 'word', tamil: 'moodu', en: 'close / shut (verb root)',
     hooks: ['A cow MOOs and CLOSES the barn DOOr — MOO-DU.',
             'MOODY teen slamming the door shut.'],
     pron: '“MOO-du”.',

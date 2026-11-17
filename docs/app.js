@@ -116,7 +116,7 @@
   // ---------- helpers ----------
   const $view = document.getElementById('view');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
-  const imgTag = (item, cls = '') => item.img ? `<img class="sketch ${cls}" src="img/${esc(item.id)}.webp" alt="Sketch: ${esc(item.img)}" loading="lazy" onerror="this.remove()">` : '';
+  const imgTag = (item, cls = '') => item.img && !item.noImg ? `<img class="sketch ${cls}" src="img/${esc(item.id)}.webp" alt="Sketch: ${esc(item.img)}" loading="lazy" onerror="this.remove()">` : '';
   const norm = s => String(s).toLowerCase().replace(/[^a-z]/g, '').replace(/(.)\1+/g, '$1').replace(/th/g, 't').replace(/dh/g, 'd').replace(/y(?=e)/g, '');
   function render(html) { $view.innerHTML = html; $view.focus({ preventScroll: true }); window.scrollTo(0, 0); }
   function setTop() {
@@ -503,7 +503,7 @@
   // ---------- offline ----------
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').then(() => navigator.serviceWorker.ready).then(reg => {
-      if (reg.active) reg.active.postMessage({ type: 'warm', urls: ITEMS.filter(i => i.img).map(i => `img/${i.id}.webp`) });
+      if (reg.active) reg.active.postMessage({ type: 'warm', urls: ITEMS.filter(i => i.img && !i.noImg).map(i => `img/${i.id}.webp`) });
     }).catch(() => {});
   }
   window.__tamil = { S: () => S, schedule, dueCards }; // for tests
