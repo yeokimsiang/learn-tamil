@@ -12,7 +12,9 @@ const rawDir = path.join(root, 'tools/.raw'); fs.mkdirSync(rawDir, { recursive: 
 const items = loadData(root).items.filter(i => i.img && (ids.length ? ids.includes(i.id) : true));
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 for (const it of items) {
-  const out = path.join(root, 'docs/img', it.id + '.webp');
+  const outDir = process.env.IMG_OUT || path.join(root, 'docs/img'); fs.mkdirSync(outDir, { recursive: true });
+  const out = path.join(outDir, it.id + '.webp');
+  if (!ids.length && !force && fs.existsSync(path.join(root, 'docs/img', it.id + '.webp'))) continue;
   if (fs.existsSync(out) && !force && !ids.length) continue;
   const url = 'https://image.pollinations.ai/prompt/' + encodeURIComponent(STYLE + it.img) +
     `?width=512&height=512&seed=${seed}&nologo=true`;
