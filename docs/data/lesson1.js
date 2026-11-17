@@ -18,7 +18,7 @@ window.TAMIL.items.push(
     hooks: ['MA RAMs a tree: your mum charges headfirst into a tree trunk, bark flying everywhere.',
             'A MARE (horse) RAMs the tree — MAR-am.'],
     pron: 'Short flat vowels, tapped r: “MUH-rum”.',
-    img: 'an angry mother in an apron headbutting a big tree trunk, bark chips flying' },
+    img: 'a woman in an apron running headfirst into a big tree trunk, impact stars, bark chips flying' },
 
   { id: 'chedi', lesson: 1, kind: 'word', tamil: 'chedi', en: 'plant',
     hooks: ['A SHADY plant: a little potted plant in sunglasses and a trenchcoat, lurking in a corner.',
@@ -31,7 +31,7 @@ window.TAMIL.items.push(
             'A KAYAK piled high with vegetables, sinking.'],
     pron: 'Rhymes with “sky”, long aa.',
     note: 'Watch for -kaai at the end of vegetable names later (vellarikaai, murungakaai).',
-    img: 'vegetables raining down from the sky onto a surprised man holding an umbrella' },
+    img: 'carrots, aubergines and cabbages falling from the sky onto a man holding an umbrella' },
 
   { id: 'pazham', lesson: 1, kind: 'word', tamil: 'pazham', en: 'fruit',
     hooks: ['PA’s HAM: dad slices open a ham and it is stuffed with fruit — PA-ZHAM.',
@@ -87,7 +87,7 @@ window.TAMIL.items.push(
     hooks: ['Holding a thing right up to your EYE: “EE-DHU… THIS one.”',
             '“IT, WHO?” — pointing at THIS thing in your hand.'],
     pron: '“ID-hu”, soft dh like “the”.', buildsOn: ['p_iay'],
-    img: 'a person holding a small object right up close to their eye, inspecting it' },
+    img: 'a person holding a small apple right next to their eye, looking at it closely' },
 
   { id: 'adhu', lesson: 1, kind: 'word', tamil: 'adhu', en: 'that',
     hooks: ['“AH, DO you see THAT one, way over there?” — pointing far away.',
@@ -123,7 +123,7 @@ window.TAMIL.items.push(
     hooks: ['An EAR with a ROOK (crow) inside it — “there IS a bird in there!” EAR-ROOK.',
             '“EE-ROO-KOO”: a cuckoo clock — there IS a bird in it.'],
     pron: '“i-ROOK-ku”, tapped r.',
-    img: 'a crow sitting inside a giant human ear' },
+    img: 'a crow sitting inside a huge human ear' },
 
   { id: 'ille', lesson: 1, kind: 'word', tamil: 'ille', variants: ['illai'], en: 'no / not / is not',
     hooks: ['“No, I’m NOT ILL-ay!” — someone shaking their head at a doctor.',
@@ -166,13 +166,13 @@ window.TAMIL.items.push(
     hooks: ['MY PEN — a hand clutching a pen. (p)EN = my.',
             'The letter N stamped on all MY things.'],
     pron: '“EN”.',
-    img: 'a hand clutching a pen possessively to the chest' },
+    img: 'a hand holding a ballpoint pen tightly against a person\'s chest' },
 
   { id: 'per', lesson: 1, kind: 'word', tamil: 'per', variants: ['peru', 'peyar'], en: 'name',
     hooks: ['A PEAR wearing a name tag: “HELLO my NAME is…”',
             'A PAIR of name tags.'],
     pron: '“PAYR”, short.',
-    img: 'a pear wearing a name tag sticker' },
+    img: 'a pear fruit wearing a blank sticker label' },
 
   { id: 'oru', lesson: 1, kind: 'word', tamil: 'oru', en: 'a / one',
     hooks: ['ONE OAR: rowing with just one oar, going round in circles. O-RU.',
@@ -228,7 +228,7 @@ window.TAMIL.items.push(
     hooks: ['A child nodding: “AH, MA, YES!” — AA-MAA.',
             'Amma (mother) says YES.'],
     pron: '“AA-maa”.',
-    img: 'a small child nodding eagerly up at their mother' },
+    img: 'a small child nodding yes happily up at a smiling mother' },
 
   { id: 'romba', lesson: 1, kind: 'word', tamil: 'romba', en: 'very / a lot',
     hooks: ['Dancing a VERY wild RUMBA — ROM-BA.',
@@ -247,7 +247,7 @@ window.TAMIL.items.push(
     hooks: ['iruku (is) + -en (I): EAR-ROOK-EN — the crow in your ear says “I AM here”.',
             '“EAR-RUCK-EN”: I AM in a ruck.'],
     pron: '“i-RUK-ken”.', buildsOn: ['iruku'],
-    img: 'a crow peeking out of a giant ear and raising its wing' },
+    img: 'a crow sitting inside a huge human ear' },
 
   // ---------- Present tense pattern ----------
   { id: 'p_ren', lesson: 1, kind: 'pattern', title: '-ren / -kren = I am doing',
@@ -267,13 +267,13 @@ window.TAMIL.items.push(
     hooks: ['Banging a frying PAN-NU — DOing something, anything!',
             'PAN: you DO the cooking.'],
     pron: '“PUN-nu”. pandre = (you) do.',
-    img: 'a person banging loudly on a frying pan with a spoon' },
+    img: 'a person banging a frying pan with a wooden spoon' },
 
   { id: 'sei', lesson: 1, kind: 'word', tamil: 'sei', en: 'do (verb root)',
     hooks: ['“Don’t just SAY it, DO it!” — a coach yelling.',
             'SAY-DO: the same thing.'],
     pron: '“SAY”.',
-    img: 'a sports coach yelling through a megaphone' },
+    img: 'a sports coach shouting at a football player on a field' },
 
   { id: 'padi', lesson: 1, kind: 'word', tamil: 'padi', en: 'study / read / learn (verb root)',
     hooks: ['A student STUDYing in a PADDED cell, walls of cushions — PA-DI.',
@@ -345,7 +345,7 @@ window.TAMIL.items.push(
     hooks: ['“EN, A COOkie — FOR ME!” — grabbing a cookie. en (my) + -akku (to).',
             'EH, NA, COO: to me!'],
     pron: '“e-NAK-ku”.', buildsOn: ['en'],
-    img: 'a person grabbing a cookie and hugging it to their chest' },
+    img: 'a fully clothed boy hugging a giant cookie with both arms, smiling' },
 
   // ---------- “To me” pattern ----------
   { id: 'p_enakku', lesson: 1, kind: 'pattern', title: 'Enakku… — wanting, liking, knowing happen TO you',
@@ -382,7 +382,7 @@ window.TAMIL.items.push(
     hooks: ['Building a DAM to block what you DON’T WANT — VEN-DAAM.',
             'venum flipped: “VAY, DAMN, I don’t want it!” — pushing the plate away.'],
     pron: '“ven-DAAM”.', buildsOn: ['venum'],
-    img: 'a man pushing a plate of food away with his hand, refusing' },
+    img: 'a man holding up his palm to refuse a plate of food, shaking his head' },
 
   { id: 'vera', lesson: 1, kind: 'word', tamil: 'vera', en: 'else / other',
     hooks: ['“Who ELSE is coming? — VERA!” A lady called Vera barges in.',
@@ -394,7 +394,7 @@ window.TAMIL.items.push(
     hooks: ['“IN, NUM NUM!” — shoving MORE food IN your mouth.',
             'INNUM = still IN.'],
     pron: '“IN-num”. innum ille = not yet.',
-    img: 'a person shoving more and more food into their full mouth' },
+    img: 'a man with cheeks stuffed full of food, still shoving in more food' },
 
   { id: 'onnum', lesson: 1, kind: 'word', tamil: 'onnum', en: '(not) anything — onnum ille = nothing',
     hooks: ['“ONE? UM… NOT ONE!” — an empty fridge. onnum ille = nothing.',
@@ -406,7 +406,7 @@ window.TAMIL.items.push(
     hooks: ['Your back is SORE from carrying a giant sack of RICE — SO-RU.',
             'SORROW: no rice.'],
     pron: '“SO-ru”, tapped r.',
-    img: 'a man bent over with a sore back carrying a giant sack of rice' },
+    img: 'a fully clothed man carrying a huge heavy sack on his back, bent over and tired' },
 
   { id: 'thanni', lesson: 1, kind: 'word', tamil: 'thanni', variants: ['thannir'], en: 'water',
     hooks: ['A sunTANNED guy gulping a huge bottle of WATER — THAN-NI.',
@@ -482,7 +482,7 @@ window.TAMIL.items.push(
     hooks: ['A cow MOOs and CLOSES the barn DOOr — MOO-DU.',
             'MOODY teen slamming the door shut.'],
     pron: '“MOO-du”.',
-    img: 'a cow closing a barn door with its hoof' },
+    img: 'a cartoon cow pushing a wooden barn door shut' },
 
   { id: 'thora', lesson: 1, kind: 'word', tamil: 'thora', variants: ['thira'], en: 'open (verb root)',
     hooks: ['THOR swings his hammer and smashes the door OPEN — THO-RA.',
@@ -560,7 +560,7 @@ window.TAMIL.items.push(
     hooks: ['VA-VA-VOOM — beckoning someone: COME here! (Amma inge vaa vaa = mother, come here, come.)',
             'WAVE: waving someone to come.'],
     pron: '“VAA”. varen = I come.',
-    img: 'a person beckoning someone to come over with a big wave' },
+    img: 'a smiling woman waving her hand, calling someone to come closer' },
 
   { id: 'meendum', lesson: 1, kind: 'word', tamil: 'meendum', en: 'again',
     hooks: ['The MEAN DUMb bully trips you AGAIN and AGAIN — MEEN-DUM.',
@@ -585,7 +585,7 @@ window.TAMIL.items.push(
     hooks: ['On the STOVE: a toy CAR is on fire after driving through chilli — KAA-RAM.',
             'oreppu: “ORE-PUFF” — puffing fire.'],
     pron: '“KAA-ram”.',
-    img: 'a small toy car on fire on a kitchen stove next to red chillies' },
+    img: 'a small toy car with flames coming out of it, next to red chilli peppers' },
 
   { id: 'kasappu', lesson: 1, set: 'tastes', spot: 2, kind: 'word', tamil: 'kasappu', en: 'bitter',
     hooks: ['At the SINK: you take one SIP from a CUP of bitter gourd juice and spit — KA-SAP-PU!',
@@ -603,7 +603,7 @@ window.TAMIL.items.push(
     hooks: ['At the SALT SHAKER: the lid falls off — “OOPS!” a mountain of salt. UP-PU.',
             'uvarppu: OVER-PUFF of salt.'],
     pron: '“UP-pu”.',
-    img: 'a salt shaker whose lid fell off, a mountain of salt on a plate' },
+    img: 'a salt shaker tipped over, spilling a big pile of salt on a table' },
 
   { id: 'thuvarppu', lesson: 1, set: 'tastes', spot: 5, kind: 'word', tamil: 'thuvarppu', variants: ['thorppu'], en: 'astringent (dry, puckering, like raw banana or betel nut)',
     hooks: ['At the TEA CUPBOARD: strong tea WARPS your mouth dry — THU-VARP-PU.',
