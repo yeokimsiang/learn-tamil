@@ -299,6 +299,7 @@ window.TAMIL.items.push(
   W4({ id: 'pandhu', cat: 'thing', tamil: 'pandhu', ta: 'பந்து', en: 'ball',
     sound: 'PANDA → PAN-DHU', meaning: 'a panda with a ball = ball',
     see: 'A PANDA balancing a big beach BALL on its nose.', alts: ['PAN-DO: a ball in a pan.'],
+    picNote: 'Imagine a beach ball balanced on its nose.',
     pron: 'pan-ðu: soft dh.', noImg: false,
     img: 'a panda balancing a colourful beach ball on its nose' }),
   W4({ id: 'kelvi', cat: 'thing', tamil: 'kelvi', ta: 'கேள்வி', en: 'question',

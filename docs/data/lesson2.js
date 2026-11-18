@@ -113,6 +113,7 @@ window.TAMIL.items.push(
     sound: '“GONNA OVEN!” → KA-NA-VAN', meaning: 'the groom bakes the cake = husband',
     see: 'The groom shouts “GONNA OVEN!” and bakes his own wedding cake.',
     alts: ['Also purushan, or veetukaarar (“the man of the house”).'],
+    picNote: 'Imagine him sliding the cake into the oven.',
     pron: 'kuh-nuh-vun: curled n.', note: 'Everyday speech also uses purushan (husband) and pondaatti (wife).',
     img: 'a groom in a suit putting a wedding cake into an oven' },
 
@@ -128,6 +129,7 @@ window.TAMIL.items.push(
     see: 'Your son: a MUG in one hand, a water GUN in the other.',
     alts: ['Everyday: en paiyan = my son.'],
     variants: ['mahan'],
+    picNote: 'Imagine a water gun in his other hand.',
     pron: 'ma-gun (Chennai: ma-hun).', note: '-an = male, -al = female (magan / magal, like avan / aval).',
     img: 'a little boy holding a big mug and a water pistol' },
 
@@ -136,6 +138,7 @@ window.TAMIL.items.push(
     see: 'Your daughter feeding a seagull from her MUG.',
     alts: ['Everyday: en ponnu = my daughter.'],
     variants: ['mahal'],
+    picNote: 'Imagine a seagull swooping at her mug.',
     pron: 'ma-guḷ: curled l (Chennai: ma-huḷ).', holdUntil: 'magan', buildsOn: ['magan'],
     img: 'a little girl feeding a seagull from a mug' },
 
@@ -144,6 +147,7 @@ window.TAMIL.items.push(
     sound: '“NONE? BUN!” → NAN-BAN', meaning: 'your friend gives you his bun = friend',
     see: 'You have NONE; your friend hands you his last BUN.',
     alts: ['nanbar = friend (respectful); nanbargal = friends.'],
+    picNote: 'Imagine him handing over his last bun.',
     pron: 'nun-bun: short vowels, curled n.', note: 'nanbar = friend (respectful); nanbargal = friends.',
     img: 'a boy happily handing his last bun to his friend' },
 
@@ -166,6 +170,7 @@ window.TAMIL.items.push(
     sound: 's-POON + EYE → POO-NAI', meaning: 'a cat balancing a spoon = cat',
     see: 'A cat balancing a SPOON over one EYE (drop the s: s-POON-EYE).',
     alts: ['Also said poone.'],
+    picNote: 'Imagine a spoon balanced over one eye.',
     pron: 'poo-nai.',
     img: 'a cat balancing a spoon on its face' },
 
@@ -202,6 +207,7 @@ window.TAMIL.items.push(
     sound: '“WON! DEE-lighted!” → VAN-DI', meaning: 'the bike you won = vehicle',
     see: 'You WON a shiny new bike: “DEE-lighted!”',
     alts: ['Any vehicle: bike, cart, car.'],
+    picNote: 'Imagine a winner’s ribbon on it: you WON it!',
     pron: 'vuṇ-ḍi: curled n and d.',
     img: 'a shiny new bicycle with a big winner rosette ribbon' },
 
@@ -216,6 +222,7 @@ window.TAMIL.items.push(
     sound: 'SUAVE-ee → SAA-VI', meaning: 'the suave gent has the key = key',
     see: 'A SUAVE gentleman twirling one giant golden KEY.',
     alts: ['SAVE-ME: the key that saves you from being locked out.'],
+    noImg: true,
     pron: 'saa-vi.',
     img: 'a suave gentleman in a tuxedo twirling a giant golden key' },
 
@@ -262,6 +269,7 @@ window.TAMIL.items.push(
     sound: '“VAH, LIE down!” → VAA-ZHAI', meaning: 'the tired banana lies down = banana',
     see: 'A tired banana flops onto the sofa: “VAH… LIE down!”',
     alts: ['Chennai often says “vaalai pazham”.'],
+    picNote: 'The banana flopping down: “VAH, LIE down!”',
     pron: 'vaa-zhai pa-zhum: zh twice (often “vaalai”).', buildsOn: ['pazham'],
     img: 'a tired cartoon banana lying down on a sofa' },
 
@@ -328,6 +336,7 @@ window.TAMIL.items.push(
     sound: '“PA, LAAH!” → PA-LAA', meaning: 'Pa singing with a jackfruit = jackfruit',
     see: 'Pa sings “LAAAH!” carrying a giant spiky jackfruit.',
     alts: ['palaa + pazham (fruit).'],
+    noImg: true,
     pron: 'pu-laa pa-zhum.', buildsOn: ['pazham'],
     img: 'a man singing while carrying a giant spiky jackfruit' },
 
@@ -335,6 +344,7 @@ window.TAMIL.items.push(
     sound: '“MA, DO LIE down” → MAA-DHU-LAI', meaning: 'a pomegranate doing the hula = pomegranate',
     see: 'A pomegranate lying on the sofa: “MA, DO LIE down with me.”',
     alts: ['MAD HULA: a pomegranate doing the hula.'],
+    picNote: 'Lying on the sofa: “MA, DO LIE down.”',
     pron: 'maa-ðu-ḷai: soft dh, curled l.',
     img: 'a pomegranate lying on a sofa with a pillow' },
 
@@ -349,6 +359,7 @@ window.TAMIL.items.push(
     sound: 'BAY + RICKshaw + KYE → BAY-RIK-KAAI', meaning: 'a pear riding a rickshaw by the bay = pear',
     see: 'A pear riding a RICKSHAW along the BAY.',
     alts: ['peri + kaai: a still-hard fruit (kaai).'],
+    picNote: 'Imagine the passenger is a pear.',
     pron: 'bay-rik-kaai (long e).',
     img: 'a green pear riding in a rickshaw along a seaside bay' },
 

@@ -1,6 +1,6 @@
 # learn-tamil
 
-A phone-friendly Tamil memory trainer built on the techniques in *Moonwalking with Einstein*:
+A phone-friendly Tamil memory trainer for Lessons 1–5 of the class, built on the techniques in *Moonwalking with Einstein*:
 
 - **Hooks (elaborative encoding):** every word gets a vivid sound-image shown as three lines (Sound, Meaning, See it), often with a colour picture.
 - **Memory palaces:** sets of words (like the six tastes) are placed at spots in a place you know.
@@ -9,6 +9,8 @@ A phone-friendly Tamil memory trainer built on the techniques in *Moonwalking wi
 - **Sounds:** a guide to reading the romanised spellings, and a 🔊 button where the phone has a Tamil voice.
 
 **Use it:** https://yeokimsiang.github.io/learn-tamil/ (add it to your home screen; it works offline).
+
+Set *Settings → Lessons your class has reached* so new words only come from lessons you've covered.
 
 Progress is stored only in your browser. Use *Settings → Export backup* now and then.
 
