@@ -18,7 +18,8 @@ window.TAMIL.items.push(
     hooks: ['A MARE (horse) charges and RAMs a tree, bark flying everywhere — MAR-AM.',
             'MA RAMs a tree: your mum charges headfirst into a tree trunk, bark flying everywhere.'],
     pron: 'Short flat vowels, tapped r: “MUH-rum”.',
-    img: 'a horse headbutting a big oak tree trunk, pieces of bark flying off' },
+    img: 'a horse headbutting a big oak tree trunk, pieces of bark flying off',
+    imgWhy: 'A horse charging past a big tree. Imagine the MARE RAMming the trunk, bark flying: MAR-AM → maram = tree.' },
 
   { id: 'chedi', lesson: 1, kind: 'word', tamil: 'chedi', en: 'plant',
     hooks: ['A SHADY plant: a little potted plant in sunglasses and a trenchcoat, lurking in a corner.',
@@ -43,7 +44,7 @@ window.TAMIL.items.push(
     img: 'a big roast ham sliced open on a plate with colourful fruits bursting out of it',
     imgWhy: 'A sliced HAM with orange fruit spilling out: PA’s HAM → pazham = fruit.' },
 
-  { id: 'mese', lesson: 1, kind: 'word', tamil: 'mese', variants: ['mesai', 'meza'], en: 'table',
+  { id: 'mese', noImg: true, lesson: 1, kind: 'word', tamil: 'mese', variants: ['mesai', 'meza'], en: 'table',
     hooks: ['A MESSY table: plates, spilled curry and rice piled all over it — MESS-ay.',
             'A talking table: “I MAY SAY, get your elbows off me!”'],
     pron: '“MAY-say”.',
@@ -101,7 +102,8 @@ window.TAMIL.items.push(
     hooks: ['“AH, DO you see THAT one, way over there?” — pointing far away.',
             'An ADD-ON: THAT thing over there.'],
     pron: '“AD-hu”, soft dh.', buildsOn: ['p_iay'],
-    img: 'a red and white striped lighthouse far away across a calm blue sea' },
+    img: 'a red and white striped lighthouse far away across a calm blue sea',
+    imgWhy: 'Lighthouses far out across the sea: “AH, DO you see THAT one, way over there?” → adhu = that (far).' },
 
   { id: 'yedhu', lesson: 1, kind: 'word', tamil: 'yedhu', en: 'which?',
     hooks: ['The YETI stands between two DOors: “YE-DHU… WHICH one?”',
@@ -152,7 +154,7 @@ window.TAMIL.items.push(
     img: 'a penguin doctor with a stethoscope nodding at a sneezing eel in a tiny bed',
     imgWhy: 'Doctor penguin (imagine the sick eel beside it): “You’re ILL, YEAH? Isn’t it?” → illeyaa = isn’t it?' },
 
-  { id: 'puththagam', lesson: 1, kind: 'word', tamil: 'puththagam', variants: ['pusthagam', 'puthagam'], en: 'book',
+  { id: 'puththagam', noImg: true, lesson: 1, kind: 'word', tamil: 'puththagam', variants: ['pusthagam', 'puthagam'], en: 'book',
     hooks: ['PUT THE GUM in the book: someone sticking chewing gum between the pages — PUTH-THA-GAM.',
             'A PUTT on the golf green — the ball rolls into a book.'],
     pron: '“POOTH-tha-gum”.',
@@ -166,7 +168,7 @@ window.TAMIL.items.push(
     img: 'a naan bread with a cute face pointing proudly at itself',
     imgWhy: 'A NAAN bread with a face, pointing to itself: “I’m naan!” → naan = I.' },
 
-  { id: 'nee', lesson: 1, kind: 'word', tamil: 'nee', en: 'you (informal)',
+  { id: 'nee', noImg: true, lesson: 1, kind: 'word', tamil: 'nee', en: 'you (informal)',
     hooks: ['A KNEE with googly eyes. Poke it: “Hey, YOU!” (casual you)',
             'You poke YOUR friend in the KNEE.'],
     pron: '“NEE”. Informal: friends, kids, younger people.',
@@ -179,7 +181,7 @@ window.TAMIL.items.push(
     img: 'a knight in armour kneeling and bowing before an old king on a throne',
     imgWhy: 'Down on one KNEE before an elder: KNEE-nga, the polite you → neenga = you (polite).' },
 
-  { id: 'en', lesson: 1, kind: 'word', tamil: 'en', en: 'my',
+  { id: 'en', noImg: true, lesson: 1, kind: 'word', tamil: 'en', en: 'my',
     hooks: ['MY PEN, chained and padlocked so nobody takes it. (p)EN = my.',
             'The letter N stamped on all MY things.'],
     pron: '“EN”.',
@@ -264,7 +266,7 @@ window.TAMIL.items.push(
     img: 'two pink flamingos dancing a wild rumba',
     imgWhy: 'Two flamingos dancing a VERY wild RUMBA → romba = very.' },
 
-  { id: 'naal', lesson: 1, kind: 'word', tamil: 'naal', en: 'day',
+  { id: 'naal', noImg: true, lesson: 1, kind: 'word', tamil: 'naal', en: 'day',
     hooks: ['A calendar DAY NAILed to the wall — NAAL.',
             'NULL: a whole DAY with nothing in it.'],
     pron: '“NAAL”, long aa, retroflex l (tongue curled back).',
@@ -296,7 +298,8 @@ window.TAMIL.items.push(
     hooks: ['A frying PAN clanging: PAN-NU. DO something!',
             'PAN: you DO the cooking.'],
     pron: '“PUN-nu”. pandre = (you) do.',
-    img: 'a black frying pan being hit with a wooden spoon' },
+    img: 'a black frying pan being hit with a wooden spoon',
+    imgWhy: 'A frying PAN being banged: PAN-NU, DO something! → pannu = do.' },
 
   { id: 'sei', lesson: 1, kind: 'word', tamil: 'sei', en: 'do (verb root)',
     hooks: ['A parrot coach squawks at the tortoise: “Don’t just SAY it, DO it!”',
@@ -316,7 +319,8 @@ window.TAMIL.items.push(
     hooks: ['“WAY LATE for WORK!” A briefcase on legs sprints past a giant clock. VAY-LAY.',
             'A VEIL over your WORK desk.'],
     pron: '“VAY-lay”.',
-    img: 'a brown leather briefcase with cartoon legs running past a big wall clock' },
+    img: 'a brown leather briefcase with cartoon legs running past a big wall clock',
+    imgWhy: 'Someone rushing with a briefcase: “WAY LATE for WORK!” VAY-LAY → vele = work.' },
 
   { id: 'kaththuko', lesson: 1, kind: 'word', tamil: 'kaththuko', en: 'learn (a skill/language)',
     hooks: ['A CAT, TO COllege! — a cat in a graduation cap carrying books to LEARN. KATH-THU-KO.',
@@ -357,9 +361,10 @@ window.TAMIL.items.push(
     hooks: ['A bright SARI dry on the washing line: all OKAY, ready to wear.',
             '“SORRY? — SARI, okay!”'],
     pron: '“SAH-ri”. odambu sari ille = (my) body is not okay = unwell.',
-    img: 'a long colourful Indian sari fabric hanging on a clothesline' },
+    img: 'a long colourful Indian sari fabric hanging on a clothesline',
+    imgWhy: 'Colourful SARI cloth drying on the line: all OKAY, ready to wear → sari = okay / right.' },
 
-  { id: 'joram', lesson: 1, kind: 'word', tamil: 'joram', variants: ['kaachal'], en: 'fever',
+  { id: 'joram', noImg: true, lesson: 1, kind: 'word', tamil: 'joram', variants: ['kaachal'], en: 'fever',
     hooks: ['A sweating thermometer with a hot JAW gulping RUM: JAW-RUM = fever.',
             'kaachal (same meaning): CATCH-ALL — you CATCH ALL the fever.'],
     pron: '“JO-ram”. Kaachal is the more standard word.',
@@ -424,7 +429,8 @@ window.TAMIL.items.push(
     hooks: ['A beaver builds a DAM to block the broccoli it DOESN’T WANT. VEN-DAAM.',
             'venum flipped: “VAY, DAMN, I don’t want it!” — pushing the plate away.'],
     pron: '“ven-DAAM”.', buildsOn: ['venum'],
-    img: 'a beaver building a wooden dam of sticks across a stream' },
+    img: 'a beaver building a wooden dam of sticks across a stream',
+    imgWhy: 'A beaver by the water with its wooden DAM. Imagine it blocking the broccoli it DOESN’T WANT → vendaam = don’t want.' },
 
   { id: 'vera', lesson: 1, kind: 'word', tamil: 'vera', en: 'else / other',
     hooks: ['“Who ELSE is coming? VERA!” Vera the cow barges into the party.',
@@ -440,7 +446,7 @@ window.TAMIL.items.push(
     img: 'a hamster with cheeks stuffed full, shoving in even more seeds',
     imgWhy: 'A hamster cramming MORE food IN: “IN, NUM NUM!” → innum = more / still.' },
 
-  { id: 'onnum', lesson: 1, kind: 'word', tamil: 'onnum', en: '(not) anything — onnum ille = nothing',
+  { id: 'onnum', noImg: true, lesson: 1, kind: 'word', tamil: 'onnum', en: '(not) anything — onnum ille = nothing',
     hooks: ['“ONE? UM… NOT ONE!” — an empty fridge. onnum ille = nothing.',
             'ONE-UM: not even one.'],
     pron: '“ON-num”.',
@@ -453,7 +459,7 @@ window.TAMIL.items.push(
     img: 'a huge sack of rice wearing a bandage, rice grains spilling',
     imgWhy: 'A huge sack of RICE so heavy it’s SORE: SO-RU → soru = rice.' },
 
-  { id: 'thanni', lesson: 1, kind: 'word', tamil: 'thanni', variants: ['thannir'], en: 'water',
+  { id: 'thanni', noImg: true, lesson: 1, kind: 'word', tamil: 'thanni', variants: ['thannir'], en: 'water',
     hooks: ['A sunTANNED red lobster gulping WATER. THAN-NI.',
             'A TUNNY (tuna) swimming in water.'],
     pron: '“THUN-ni”, soft th.',
@@ -589,7 +595,8 @@ window.TAMIL.items.push(
     hooks: ['“I’ll wash this APRON LATER” — a dirty apron tossed aside. AP-RAM.',
             'UP RUM: rum later.'],
     pron: '“AP-rum”.',
-    img: 'a dirty kitchen apron with food stains lying on a pile of laundry' },
+    img: 'a dirty kitchen apron with food stains lying on a pile of laundry',
+    imgWhy: 'A dirty APRON hanging in the kitchen: “I’ll wash it LATER” → apram = later.' },
 
   { id: 'p_laam', lesson: 1, kind: 'pattern', title: '-laam = let’s / (we) can',
     rule: 'Verb + -laam = “let’s …” or “(we) may …”. paaru (see) → paakalaam (let’s see / see you), saapidu → saapidalaam (let’s eat), kudi → kudikalaam (let’s drink), po → polaam (let’s go).',
@@ -656,7 +663,8 @@ window.TAMIL.items.push(
     hooks: ['At the SINK: one SIP from a CUP of bitter gourd juice. Even the gourd grimaces. KA-SAP-PU!',
             'CASH-SAP: bitter about cash.'],
     pron: '“ka-SAP-pu”. pavakka (bitter gourd) kasappaa iruku.',
-    img: 'a bitter gourd vegetable with a disgusted face next to a glass of green juice' },
+    img: 'a bitter gourd vegetable with a disgusted face next to a glass of green juice',
+    imgWhy: 'A grimacing bitter gourd. One SIP from a CUP of its juice: KA-SAP-PU! → kasappu = bitter.' },
 
   { id: 'pulippu', lesson: 1, set: 'tastes', spot: 3, kind: 'word', tamil: 'pulippu', en: 'sour',
     hooks: ['At the FRUIT BOWL: a lemon PULLs its LIPs in. PU-LIP-PU!',
