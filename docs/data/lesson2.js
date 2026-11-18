@@ -40,6 +40,7 @@ window.TAMIL.items.push(
     sound: '“UN… NAH!” → AN-NA', meaning: 'big brother won’t share = elder brother',
     see: 'Your big brother holds the TV remote high out of reach: “UN… NAH! Mine!”',
     alts: ['UNNA: “UN-fair, NAH!” says your big brother.'],
+    picNote: 'Imagine him holding the remote high out of your reach.',
     pron: 'uṇ-ṇaa: curled, held n. Careful: not the name Anna, and not amma (mother).', holdUntil: 'amma',
     img: 'a tall teenage boy holding a tv remote high out of reach of a small child' },
 
@@ -54,6 +55,7 @@ window.TAMIL.items.push(
     sound: 'TONGUE-uh-CHEEky → THAN-GACH-CHI', meaning: 'little sister pulling faces = younger sister',
     see: 'Your little sister sticks her TONGUE out: so CHEEKY!',
     alts: ['thangai is the formal form.'],
+    picNote: 'Imagine her sticking her tongue out.',
     pron: 'tung-gach-chi: t on the teeth, ng as in “finger”, held ch.',
     img: 'a little girl on a bunk bed cheekily sticking her tongue out' },
 
@@ -182,6 +184,7 @@ window.TAMIL.items.push(
     sound: 'WEED + OO → VEE-DU', meaning: 'a house overgrown with weeds = house',
     see: 'A cosy house completely overgrown with WEEDS: “OOO!”',
     alts: ['VEE-DO: a house with a V-shaped roof and a big DOor.'],
+    picNote: 'Imagine it overgrown with weeds.',
     pron: 'vee-ḍu: curled d.', note: 'veettukku = to the house (Lesson 3).',
     img: 'a cosy house completely overgrown with weeds' },
 
@@ -313,6 +316,7 @@ window.TAMIL.items.push(
     sound: '“DRAT!” + CHAI → DRAT-CHAI', meaning: 'grapes falling in your tea = grapes',
     see: 'A bunch of grapes plops into your CHAI: “DRAT!”',
     alts: ['DRAT-CHAI: a dratted chai full of raisins.'],
+    picNote: 'Grapes plopping into the chai: DRAT!',
     pron: 'drut-chai (written thiraatchai).',
     img: 'a bunch of purple grapes falling into a cup of chai tea' },
 

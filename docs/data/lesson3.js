@@ -123,6 +123,7 @@ window.TAMIL.items.push(
     sound: 'COIL → KOIL', meaning: 'a snake coiled round the tower = temple',
     see: 'A giant snake COILED round a colourful temple tower.',
     alts: ['COY-ILL: a shy, ill pilgrim at the temple.'],
+    picNote: 'Imagine a giant snake coiled round the tower.',
     pron: 'koe-il (long o).',
     img: 'a giant friendly snake coiled around a colourful south indian temple tower' },
 
@@ -130,6 +131,7 @@ window.TAMIL.items.push(
     sound: 'CARD + OO → KAA-DU', meaning: 'a playing card lost in the forest = forest',
     see: 'A giant playing CARD house standing alone in a dense FOREST: “OOO!”',
     alts: ['KAZOO: a monkey playing a kazoo in the jungle.'],
+    picNote: 'Imagine a giant playing-card house among the trees.',
     pron: 'kaa-ḍu: curled d. “to the forest” = kaattu-ku.',
     img: 'a giant playing card standing in a dense green jungle' },
 
@@ -193,6 +195,7 @@ window.TAMIL.items.push(
     sound: '“OOH, ROLL EYE!” + KILL-ANGRY-GOO → U-RU-LAI KI-ZHAN-GU', meaning: 'rolling potatoes = potato',
     see: 'Potatoes ROLLING down a hill (urulai really means rolling!) and into a brick KILN.',
     alts: ['kizhangu = any root vegetable: KILN-GOO, roasted roots.'],
+    picNote: 'Imagine them rolling on into a brick kiln.',
     pron: 'u-ru-ḷai ki-zhun-gu.',
     img: 'potatoes rolling down a grassy hill' },
 
@@ -242,6 +245,7 @@ window.TAMIL.items.push(
     sound: '“PUT IN A…” → PU-DI-NA', meaning: 'put in a mint leaf = mint',
     see: 'Your drink is boring: “PUT IN A mint leaf!” Fresh mint floats on top.',
     alts: ['PUDINA sounds like pudina chutney: green mint chutney.'],
+    picNote: 'Mint in the drink: PUT IN A mint leaf!',
     pron: 'pu-ði-naa: soft d.',
     img: 'a glass of iced drink with fresh mint leaves floating on top' },
 
@@ -249,6 +253,7 @@ window.TAMIL.items.push(
     sound: 'VELL + RICKY + kaai → VEL-LA-RI-KAAI', meaning: 'Ricky with cucumber eyes = cucumber',
     see: 'RICKY relaxing with cucumber slices on his eyes: “VELL, RICKY?”',
     alts: ['vella(i) = white: the white inside of a cucumber.'],
+    picNote: 'Imagine cucumber slices on Ricky’s eyes.',
     pron: 'veḷ-ḷa-rik-kaai: curled l.', buildsOn: ['kaai'],
     img: 'a man relaxing with cucumber slices on his eyes' },
 
@@ -256,6 +261,7 @@ window.TAMIL.items.push(
     sound: 'MORE + RUNG + kaai → MU-RUN-GA-KAAI', meaning: 'a ladder of drumsticks = drumstick',
     see: 'A ladder whose RUNGS are long green drumsticks: “MORE RUNGS!”',
     alts: ['A drummer playing with drumstick pods.'],
+    picNote: 'Imagine the rungs made of long green drumsticks.',
     pron: 'mu-rung-gaik-kaai.', buildsOn: ['kaai'],
     img: 'a ladder made of long green moringa drumstick pods' },
 
@@ -277,6 +283,7 @@ window.TAMIL.items.push(
     sound: '“PAH! WACK!” + kaai → PAA-VAK-KAAI', meaning: 'spitting out the bitter gourd = bitter gourd',
     see: 'One bite of bitter gourd: “PAH!” and you WHACK it off the plate.',
     alts: ['It’s the bitter one: kasappu!'],
+    picNote: 'Imagine it flying off the plate: PAH! WHACK!',
     pron: 'paa-vuk-kaai.', buildsOn: ['kaai', 'kasappu'],
     img: 'a knobbly green bitter gourd flying off a plate' },
 
@@ -313,6 +320,7 @@ window.TAMIL.items.push(
     sound: 'COVE + ACK + kaai → KO-VAK-KAAI', meaning: 'tiny gourds hiding in a cove = ivy gourd',
     see: 'Little striped ivy gourds hiding in a seaside COVE: “ACK!”',
     alts: ['KO-WACK: a cow whacking tiny gourds.'],
+    picNote: 'Imagine them hiding in a seaside cove.',
     pron: 'koe-vuk-kaai (long o).', buildsOn: ['kaai'],
     img: 'small striped green ivy gourds on a sandy beach cove' },
 
