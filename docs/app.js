@@ -445,7 +445,7 @@
       <div class="sticky" id="actions"><button class="btn primary block" id="sc">Show the scene</button></div>`);
     wireUndo();
     document.getElementById('sc').onclick = () => {
-      document.getElementById('scene').innerHTML = `${picture(item)}${hookBlock(item)}<p class="pron">🗣 ${esc(item.pron)}</p>${item.set ? palaceSpotLine(item) : ''}`;
+      document.getElementById('scene').innerHTML = `${hookBlock(item)}${picture(item, { small: true })}<p class="pron">🗣 ${esc(item.pron)}</p>${item.set ? palaceSpotLine(item) : ''}`;
       document.getElementById('actions').innerHTML = '<button class="btn primary block" id="next">Continue</button>';
       document.getElementById('next').onclick = stepStudy;
     };
@@ -508,7 +508,7 @@
       <div class="big">${esc(item.tamil)}${speakBtn(item.ta)}</div>${scriptLine(item.ta)}<div class="meaning">${esc(item.en)}</div>
       ${item.variants ? `<div class="muted small">also: ${item.variants.map(esc).join(', ')}</div>` : ''}
       <p><span class="badge ${s.cls}">${s.label}</span>${stats}${misses(id) ? `<span class="badge warn">${plural(misses(id), 'miss', 'misses')}</span>` : ''}</p>
-      ${picture(item)}${hookBlock(item)}<p class="pron">🗣 ${esc(item.pron)} <a href="#sounds" class="small">how to read</a></p>
+      ${hookBlock(item)}${picture(item, { small: true })}<p class="pron">🗣 ${esc(item.pron)} <a href="#sounds" class="small">how to read</a></p>
       ${item.set ? palaceSpotLine(item) : ''}
       ${item.note ? `<div class="note">${esc(item.note)}</div>` : ''}
       <h2>Choose the hook</h2>${hookPicker(item)}
