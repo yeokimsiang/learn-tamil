@@ -116,7 +116,13 @@
   // ---------- helpers ----------
   const $view = document.getElementById('view');
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
-  const imgTag = (item, cls = '') => item.img && !item.noImg ? `<img class="sketch ${cls}" src="img/${esc(item.id)}.webp" alt="Sketch: ${esc(item.img)}" loading="lazy" onerror="this.remove()">` : '';
+  function imgTag(item, cls = '') {
+    if (!item.img || item.noImg) return '';
+    const st = S.items[item.id] || {};
+    const other = st.custom || (st.hook || 0) > 0;
+    const why = item.imgWhy ? `<figcaption class="img-why">🖼 <b>How it links:</b> ${esc(item.imgWhy)}${other ? ' <span class="muted">(picture shows hook 1)</span>' : ''}</figcaption>` : '';
+    return `<figure class="pic"><img class="sketch ${cls}" src="img/${esc(item.id)}.webp" alt="Picture: ${esc(item.img)}" loading="lazy" onerror="this.parentNode.remove()">${why}</figure>`;
+  }
   const norm = s => String(s).toLowerCase().replace(/[^a-z]/g, '').replace(/(.)\1+/g, '$1').replace(/th/g, 't').replace(/dh/g, 'd').replace(/y(?=e)/g, '');
   function render(html) { $view.innerHTML = html; $view.focus({ preventScroll: true }); window.scrollTo(0, 0); }
   function setTop() {

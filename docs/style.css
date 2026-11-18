@@ -101,6 +101,9 @@ p { margin: 8px 0; }
   background: #fff; filter: var(--img-filter); object-fit: cover;
 }
 .sketch.small { max-width: 160px; }
+.pic { margin: 12px 0; }
+.pic .sketch { margin-bottom: 6px; }
+.img-why { font-size: 15px; line-height: 1.45; text-align: center; max-width: 340px; margin: 0 auto; }
 
 .hook-opt {
   display: flex; gap: 10px; align-items: flex-start; padding: 10px; border: 1px solid var(--line);

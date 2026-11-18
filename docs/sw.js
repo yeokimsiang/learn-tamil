@@ -1,5 +1,5 @@
 /* Offline cache: app shell precached; sketches warmed after first load. */
-const CACHE = 'tamil-v1';
+const CACHE = 'tamil-v2';
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data/lesson1.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
