@@ -33,6 +33,7 @@ window.TAMIL.items.push(
     sound: '“UM… MA!” → AM-MA', meaning: 'calling for Mum = mother',
     see: 'You can’t find your shoe: “UM… MA!” and Mum appears holding it.',
     alts: ['The rhyme: Amma inge vaa vaa = Mum, come here, come!'],
+    noImg: true,
     pron: 'um-maa.', note: 'Also a polite way to address any woman (“madam”).',
     img: 'a mother in a kitchen holding up a lost shoe' },
 
@@ -48,6 +49,7 @@ window.TAMIL.items.push(
     sound: '“UCK! A…” → AK-KA', meaning: 'big sister disgusted = elder sister',
     see: 'Big sister at the mirror sees your toothpaste mess: “UCK! A-ll over!”',
     alts: ['Big sister’s “UCK-A!” at the dirty dishes.'],
+    noImg: true,
     pron: 'uk-kaa: held k.', note: 'Also used for any slightly older woman, warmly.',
     img: 'a teenage girl at a bathroom mirror pulling a disgusted face at a toothpaste mess' },
 
@@ -156,6 +158,7 @@ window.TAMIL.items.push(
     sound: '“NIGH!” → NAAI (rhymes with “sky”)', meaning: 'the dog that neighs = dog',
     see: 'A dog trying to neigh like a horse: “NAAAI!”',
     alts: ['A dog sitting NIGH (near) you all day.'],
+    noImg: true,
     pron: 'naai, rhymes with “sky”.',
     img: 'a dog standing on its hind legs neighing like a horse' },
 
@@ -302,6 +305,7 @@ window.TAMIL.items.push(
     sound: 'ANANAS → AN-NAA-SI', meaning: 'pineapple (ananas, as in much of Europe)',
     see: 'A pineapple in sunglasses: “AH, NAAH, SEE you!”',
     alts: ['Portuguese ananás: same fruit, same name.'],
+    noImg: true,
     pron: 'un-naa-si.',
     img: 'a pineapple wearing sunglasses' },
 

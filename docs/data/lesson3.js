@@ -205,6 +205,7 @@ window.TAMIL.items.push(
     sound: 'maam + kaai → MAAN-GAAI', meaning: 'the mango, still raw = raw mango',
     see: 'A hard green mango; you bite it and your face puckers: still raw!',
     alts: ['A MAN GASPs at a sour green mango.'],
+    noImg: true,
     pron: 'maan-gaai.', buildsOn: ['kaai', 'maambazham'],
     img: 'a hard green raw mango with a bite taken out' },
 
@@ -227,6 +228,7 @@ window.TAMIL.items.push(
     sound: 'IN + (gin)GE → IN-JI', meaning: 'injured ginger = ginger',
     see: 'A knobbly ginger root with a bandage: INJured.',
     alts: ['INJI rhymes with GINGE: ginger.'],
+    noImg: true,
     pron: 'in-ji.',
     img: 'a knobbly ginger root wearing a bandage' },
 
@@ -305,6 +307,7 @@ window.TAMIL.items.push(
     sound: 'WENDY + DUCK + kaai → VEN-DAK-KAAI', meaning: 'Wendy’s duck eats lady’s fingers = okra',
     see: 'WENDY’s DUCK gobbling up lady’s fingers (okra).',
     alts: ['VEN-DUCK: a duck with fingers.'],
+    noImg: true,
     pron: 'veṇ-ḍak-kaai: curled n-d.', buildsOn: ['kaai'],
     img: 'a duck eating green okra pods' },
 
