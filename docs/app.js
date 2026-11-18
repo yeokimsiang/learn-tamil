@@ -16,10 +16,13 @@
 
   // ---------- storage ----------
   const fresh = () => ({ v: 2, items: {}, cards: {}, days: {}, spots: {}, lastExport: 0,
-    settings: { newPerDay: 15, rideMin: 25, typing: false, theme: 'auto', script: false, autoplay: true } });
+    settings: { newPerDay: 15, rideMin: 25, typing: false, theme: 'auto', script: false, autoplay: false, lessonsUnlocked: 1 } });
   let S = fresh();
   try { const raw = localStorage.getItem(KEY); if (raw) S = Object.assign(fresh(), JSON.parse(raw)); } catch (e) { /* private mode etc. */ }
+  if (S.settings && S.settings.lessonsUnlocked == null) S.settings.autoplay = false; // speech is opt-in
   S.settings = Object.assign(fresh().settings, S.settings);
+  const LESSONS = (DATA.lessons || []).map(l => l.n).sort((a, b) => a - b);
+  const unlocked = it => (it.lesson || 1) <= S.settings.lessonsUnlocked;
   function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* keep in memory */ } }
 
   const now = () => Date.now();
@@ -72,7 +75,7 @@
   function nextNew() {
     let word = null, phrase = null;
     for (const it of ITEMS) {
-      if (introduced(it.id)) continue;
+      if (introduced(it.id) || !unlocked(it)) continue;
       if (it.kind === 'phrase') {
         if (!phrase && (it.buildsOn || []).every(graduated)) phrase = it;
       } else if (!word && (!it.holdUntil || graduated(it.holdUntil))) word = it;
@@ -241,6 +244,7 @@
       </div>
       ${due || nn ? `<a class="btn primary block" href="#study">Start ride (about ${mins} min)</a>` :
         `<div class="card center"><p><b>All done for now.</b></p><p class="muted small">${nextRideText()}</p></div>`}
+      ${!nextNew() && LESSONS.some(n => n > S.settings.lessonsUnlocked) ? `<div class="note">All of Lesson ${S.settings.lessonsUnlocked} is started. When your class reaches Lesson ${S.settings.lessonsUnlocked + 1}, unlock it in <a href="#settings">Settings</a>.</div>` : ''}
       ${lc ? `<a class="btn block" href="#fix">Fix ${plural(lc, 'weak hook')}</a>` : ''}
       ${backupDue ? `<a class="btn block" href="#settings">Back up your progress (last: ${S.lastExport ? new Date(S.lastExport).toLocaleDateString() : 'never'})</a>` : ''}
       <details class="card small" ${started ? '' : 'open'}><summary><b>How it works</b></summary>
@@ -259,7 +263,7 @@
   function nextRideText() {
     const { t, when } = nextRide();
     const n = Object.values(S.cards).filter(c => c.due <= t).length;
-    if (!n && !nextNew()) return 'Lesson complete. More lessons coming.';
+    if (!n && !nextNew()) return 'Everything unlocked is started. Unlock the next lesson in Settings when your class gets there.';
     return `${when}: about ${plural(n, 'card')} (~${estimateMin(n)} min)${nextNew() ? ' plus new words' : ''}.`;
   }
 
@@ -483,10 +487,10 @@
       <div class="filters">${[['all', 'All words'], ['weak', 'Weak spots'], ['phrases', 'Phrases']].map(([k, l]) =>
         `<button data-f="${k}" class="${k === filter ? 'on' : ''}">${l}</button>`).join('')}</div>
       ${filter === 'weak' ? `<p class="muted small">Words you’ve missed since their hook last changed, worst first.${leeches().length ? ' <a href="#fix">Fix weak hooks</a>' : ''}</p>` : ''}
-      ${pick.length ? `<ul class="list">${pick.map(i => {
+      ${pick.length ? LESSONS.filter(n => pick.some(i => (i.lesson || 1) === n)).map(n => `<h2>Lesson ${n}${n > S.settings.lessonsUnlocked ? ' <span class="badge">locked</span>' : ''}</h2><ul class="list">${pick.filter(i => (i.lesson || 1) === n).map(i => {
         const s = stage(i);
         return `<li><a href="#item/${esc(i.id)}"><span><b>${esc(i.tamil)}</b> <span class="badge ${s.cls}">${s.label}</span>${filter === 'weak' ? ` <span class="badge warn">${plural(misses(i.id), 'miss', 'misses')}</span>` : ''}</span><span class="en">${esc(i.en)}</span></a></li>`;
-      }).join('')}</ul>` : '<p class="muted">Nothing here yet.</p>'}`);
+      }).join('')}</ul>`).join('') : '<p class="muted">Nothing here yet.</p>'}`);
     $view.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { location.hash = b.dataset.f === 'all' ? '#words' : '#words/' + b.dataset.f; });
   }
 
@@ -579,12 +583,14 @@
     const st = S.settings;
     render(`<h1>Settings</h1>
       <div class="card">
+        <label class="field">Lessons your class has reached<select id="unl">${LESSONS.map(n => `<option value="${n}" ${n === st.lessonsUnlocked ? 'selected' : ''}>Up to Lesson ${n}</option>`).join('')}</select></label>
+        <p class="muted small">New words only come from these lessons, in order.</p>
         <label class="field">Minutes per ride<input type="number" id="ride" min="5" max="90" value="${st.rideMin}"></label>
         <label class="field">Most new items per day<input type="number" id="npd" min="1" max="60" value="${st.newPerDay}"></label>
         <p class="muted small">New words are cut back automatically when lots of reviews are due.</p>
         <label class="check-row"><input type="checkbox" id="typing" ${st.typing ? 'checked' : ''}><span>Type answers (optional, otherwise say them out loud)</span></label>
         <label class="check-row"><input type="checkbox" id="script" ${st.script ? 'checked' : ''}><span>Show Tamil script under the words</span></label>
-        <label class="check-row"><input type="checkbox" id="autoplay" ${st.autoplay ? 'checked' : ''} ${taVoice ? '' : 'disabled'}><span>Speak words automatically ${taVoice ? '' : '(no Tamil voice on this device)'}</span></label>
+        <label class="check-row"><input type="checkbox" id="autoplay" ${st.autoplay ? 'checked' : ''} ${taVoice ? '' : 'disabled'}><span>Speak words automatically (off by default; tap 🔊 to hear a word) ${taVoice ? '' : '(no Tamil voice on this device)'}</span></label>
         <p style="margin-top:12px">Theme</p>
         <div class="filters">${['auto', 'light', 'dark'].map(t => `<button data-theme-btn="${t}" class="${st.theme === t ? 'on' : ''}">${t}</button>`).join('')}</div>
       </div>
@@ -596,6 +602,7 @@
       </div>
       <div class="card"><button class="btn block g-again" id="reset">Reset all progress</button></div>
       <p class="muted small center">Methods from <i>Moonwalking with Einstein</i>: elaborative encoding, memory palaces, chunking, plus spaced retrieval.</p>`);
+    document.getElementById('unl').onchange = e => { st.lessonsUnlocked = +e.target.value; save(); toast('Lessons updated'); };
     document.getElementById('ride').onchange = e => { st.rideMin = Math.max(5, Math.min(90, +e.target.value || 25)); save(); };
     document.getElementById('npd').onchange = e => { st.newPerDay = Math.max(1, Math.min(60, +e.target.value || 15)); save(); };
     ['typing', 'script', 'autoplay'].forEach(k => { document.getElementById(k).onchange = e => { st[k] = e.target.checked; save(); }; });

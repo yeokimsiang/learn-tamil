@@ -196,3 +196,4 @@ body:not(.studying) .sticky { bottom: calc(50px + env(safe-area-inset-bottom)); 
 .check-row input { margin-top: 5px; flex: none; accent-color: var(--accent); width: 18px; height: 18px; }
 .toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: var(--text); color: var(--bg);
   padding: 10px 16px; border-radius: 10px; z-index: 9; font-size: 15px; }
+.field select { display: block; width: 100%; margin-top: 4px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }

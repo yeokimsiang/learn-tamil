@@ -32,10 +32,14 @@ for (const it of D.items) {
 }
 for (const it of D.items) for (const b of it.buildsOn || []) if (!ids.has(b)) errs.push(`${it.id} buildsOn unknown ${b}`);
 const norm = s => s.toLowerCase().replace(/[^a-z]/g, '').replace(/(.)\1+/g, '$1');
-const known = D.items.filter(i => i.kind === 'word').flatMap(i => [i.tamil, ...(i.variants || [])]).map(norm);
+// words, their variants, and every form a pattern teaches (table cells and drill answers)
+const patternForms = D.items.filter(i => i.kind === 'pattern').flatMap(p => [...p.table.slice(1).flat(), ...p.drills.map(d => d[1])])
+  .flatMap(c => String(c).split(/[:\/,;()]|\s+/)).filter(w => /^[a-z]{3,}$/i.test(w));
+const known = D.items.filter(i => i.kind === 'word').flatMap(i => [i.tamil, ...(i.variants || [])]).concat(patternForms).map(norm);
 // covered = exact match, or shares a stem with a known word (pudikaadhaa ~ pudikum, onnumille ~ onnum)
 const covered = v => known.some(k => k === v || (k.length >= 4 && v.startsWith(k.slice(0, -2))));
-const NOT_VOCAB = new Set(['rhyme']);
+// English words that happen to sit on the left of a 'word - meaning' line in the slides
+const NOT_VOCAB = new Set(['rhyme', 'strawberry', 'mine', 'yours', 'his', 'hers', 'its', 'ours', 'head', 'chest', 'eyebrows', 'lips', 'exception', 'ku', 'la', 'story']);
 for (const L of D.lessons) {
   const pdf = path.join(root, `lessons/Tamil_Lesson_${L.n}_Bhavani.pdf`);
   const txt = execFileSync('pdftotext', ['-layout', pdf, '-'], { encoding: 'utf8' });

@@ -1,7 +1,7 @@
 /* Offline cache. App files are served from the cache straight away and refreshed in the
    background, so a weak bus signal never leaves a blank screen. Pictures are cache-first. */
-const CACHE = 'tamil-v3';
-const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data/lesson1.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
+const CACHE = 'tamil-v6';
+const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'data/lesson1.js', 'data/lesson2.js', 'data/lesson3.js', 'data/lesson4.js', 'data/lesson5.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
