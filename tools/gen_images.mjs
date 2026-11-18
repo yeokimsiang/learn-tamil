@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const args = process.argv.slice(2);
 const seedIdx = args.indexOf('--seed'); const seed = seedIdx >= 0 ? args.splice(seedIdx, 2)[1] : '11';
 const force = args.includes('--force'); const ids = args.filter(a => !a.startsWith('--'));
-const STYLE = 'bright colourful cartoon illustration, bold outlines, simple flat colours, funny, family friendly, fully clothed, no text, no words, no letters: ';
+const STYLE = 'bright colourful cartoon illustration, one large central subject, close-up, bold outlines, simple flat colours, plain light background, funny, family friendly, fully clothed, no text, no words, no letters, no extra figures: ';
 const rawDir = path.join(root, 'tools/.raw'); fs.mkdirSync(rawDir, { recursive: true });
 const items = loadData(root).items.filter(i => i.img && (ids.length || !i.noImg) && (ids.length ? ids.includes(i.id) : true));
 const sleep = ms => new Promise(r => setTimeout(r, ms));

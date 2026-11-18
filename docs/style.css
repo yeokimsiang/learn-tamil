@@ -100,10 +100,9 @@ p { margin: 8px 0; }
   display: block; width: 100%; max-width: 300px; aspect-ratio: 1; margin: 12px auto; border-radius: 12px;
   background: #fff; filter: var(--img-filter); object-fit: cover;
 }
-.sketch.small { max-width: 160px; }
+.sketch.small { max-width: 220px; }
 .pic { margin: 12px 0; }
 .pic .sketch { margin-bottom: 6px; }
-.img-why { font-size: 15px; line-height: 1.45; text-align: center; max-width: 340px; margin: 0 auto; }
 
 .hook-opt {
   display: flex; gap: 10px; align-items: flex-start; padding: 10px; border: 1px solid var(--line);
@@ -140,3 +139,60 @@ table.pat th { color: var(--muted); font-weight: 600; font-size: 13px; }
 .progress div { height: 100%; background: var(--accent); }
 .center { text-align: center; }
 .leech { background: var(--warn-soft); border-radius: 12px; padding: 12px; margin: 10px 0; }
+
+/* ---- v2: structured hooks, categories, speech, sticky actions ---- */
+:root {
+  --c-q: #2f6fd6; --c-place: #0f9488; --c-person: #d0661e; --c-thing: #b08a00;
+  --c-food: #c2410c; --c-verb: #3f8a2a; --c-feel: #8b4fc8; --c-little: #6b7280;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-q: #7aa7f0; --c-place: #4fd1c5; --c-person: #f0a36b; --c-thing: #e3c04b;
+    --c-food: #f59e6b; --c-verb: #86d06f; --c-feel: #c39cf0; --c-little: #a3a3ad;
+  }
+}
+:root[data-theme="dark"] {
+  --c-q: #7aa7f0; --c-place: #4fd1c5; --c-person: #f0a36b; --c-thing: #e3c04b;
+  --c-food: #f59e6b; --c-verb: #86d06f; --c-feel: #c39cf0; --c-little: #a3a3ad;
+}
+.cat-q { --cat: var(--c-q); } .cat-place { --cat: var(--c-place); } .cat-person { --cat: var(--c-person); }
+.cat-thing { --cat: var(--c-thing); } .cat-food { --cat: var(--c-food); } .cat-verb { --cat: var(--c-verb); }
+.cat-feel { --cat: var(--c-feel); } .cat-little { --cat: var(--c-little); }
+.card[class*="cat-"] { border-left: 6px solid var(--cat); }
+.badge.cat-b { background: transparent; border: 1px solid var(--cat); color: var(--cat); }
+
+.meaning { font-size: 22px; font-weight: 600; margin: 2px 0 4px; }
+.script { font-size: 20px; color: var(--muted); margin: 2px 0; }
+.speak { border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; width: 40px; height: 40px;
+  font-size: 18px; vertical-align: middle; margin-left: 6px; cursor: pointer; }
+
+dl.why { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 12px 0; padding: 12px;
+  background: var(--surface-2); border-radius: 12px; border-left: 4px solid var(--accent); }
+dl.why dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding-top: 3px; }
+dl.why dd { margin: 0; }
+.pic-note { font-size: 14px; color: var(--muted); text-align: center; margin-top: 4px; }
+dl.guide { margin: 0; }
+dl.guide dt { font-weight: 700; margin-top: 10px; }
+dl.guide dd { margin: 2px 0 0; font-size: 15px; }
+details.more { margin-top: 12px; }
+details.more summary, details.card summary { cursor: pointer; color: var(--accent); font-weight: 600; min-height: 32px; }
+hr.rule { border: none; border-top: 1px solid var(--line); margin: 14px 0; }
+.btn.know { display: block; margin: 18px auto 0; color: var(--muted); font-weight: 400; }
+.btn.undo { min-height: 36px; padding: 4px 0; font-size: 14px; font-weight: 500; }
+
+/* While studying the bottom tabs hide and the main action sticks to the bottom of the screen. */
+body.studying .tabs { display: none; }
+body.studying main { padding-bottom: 24px; }
+.sticky { position: sticky; bottom: 0; z-index: 4; padding: 10px 0 calc(10px + env(safe-area-inset-bottom));
+  background: linear-gradient(to top, var(--bg) 75%, transparent); }
+body:not(.studying) .sticky { bottom: calc(50px + env(safe-area-inset-bottom)); }
+.sticky .btn.block { margin: 0; }
+.grades { margin-top: 0; }
+.grades.n3 { grid-template-columns: repeat(3, 1fr); }
+
+.field { display: block; margin-bottom: 12px; }
+.field input { margin-top: 4px; }
+.check-row { display: flex; gap: 10px; align-items: flex-start; margin: 12px 0; }
+.check-row input { margin-top: 5px; flex: none; accent-color: var(--accent); width: 18px; height: 18px; }
+.toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: var(--text); color: var(--bg);
+  padding: 10px 16px; border-radius: 10px; z-index: 9; font-size: 15px; }
