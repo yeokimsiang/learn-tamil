@@ -174,6 +174,7 @@ window.TAMIL.items.push(
     sound: 'MUTTER + AYE → MUT-TAI', meaning: 'a muttering egg = egg',
     see: 'A grumpy egg sitting on a wall, MUTTERING “AYE…”',
     alts: ['muttai + gose = cabbage (the egg-shaped one).'],
+    picNote: 'The egg on the wall: imagine it muttering “AYE…”',
     pron: 'muṭ-ṭai: curled t, held.', note: 'muttai + gose = cabbage (egg-shaped).',
     img: 'a grumpy cartoon egg sitting on a brick wall' },
 
@@ -181,6 +182,7 @@ window.TAMIL.items.push(
     sound: 'POO + GHOST → POOK-KO-SU', meaning: 'a flower-cabbage ghost = cauliflower',
     see: 'A GHOST whose head is a cauliflower, a flower (poo) on top.',
     alts: ['poo (flower) + gose (cabbage) = cauli-FLOWER. Chennai also says cauliflower or gobi.'],
+    noImg: true,
     pron: 'pook-ko-su (long o).', buildsOn: ['poo'],
     img: 'a friendly ghost whose head is a cauliflower' },
 
@@ -217,6 +219,7 @@ window.TAMIL.items.push(
     sound: 'harPOON + DO → POON-DU', meaning: 'harpooning a garlic bulb = garlic',
     see: 'A harPOON stuck in a giant garlic bulb: “DO it!”',
     alts: ['The smelly one in every rasam.'],
+    picNote: 'Imagine the harpoon stuck in a giant garlic bulb.',
     pron: 'poon-ḍu: curled n-d.',
     img: 'a harpoon stuck in a giant garlic bulb' },
 
@@ -238,6 +241,7 @@ window.TAMIL.items.push(
     sound: 'COT + A + MULLET → KOTH-THA-MAL-LI', meaning: 'coriander with a mullet = coriander',
     see: 'A barber on a COT gives a bunch of coriander a MULLET haircut.',
     alts: ['kothu = bunch: a bunch of coriander.'],
+    picNote: 'Hair like a bunch of coriander: imagine it cut into a mullet.',
     pron: 'kot-tu-mul-li: t on the teeth.',
     img: 'a bunch of fresh coriander with a funny mullet hairstyle' },
 
@@ -269,6 +273,7 @@ window.TAMIL.items.push(
     sound: 'VEN(ice) + GAR(den) + YUM → VEN-GAA-YAM', meaning: 'an onion in a Venice garden = onion',
     see: 'A giant onion growing in a VENICE GARDEN beside a canal: “YUM!”',
     alts: ['The one that makes you cry.'],
+    picNote: 'Imagine a giant onion growing in a Venice garden.',
     pron: 'ven-gaa-yum: short e.',
     img: 'a giant onion growing in a garden beside a venice canal with a gondola' },
 
@@ -276,6 +281,7 @@ window.TAMIL.items.push(
     sound: 'TUCK + CAR + LEE → THAK-KAA-LI', meaning: 'Lee tucks a tomato into his car = tomato',
     see: 'LEE TUCKS a giant tomato into his little CAR.',
     alts: ['The red one in every rasam.'],
+    noImg: true,
     pron: 'tuk-kaa-ḷi: t on the teeth, curled l.',
     img: 'a man tucking a giant red tomato into his tiny car' },
 
@@ -313,6 +319,7 @@ window.TAMIL.items.push(
     sound: 'CUT TRICK + kaai → KATH-THRI-KAAI', meaning: 'a magician’s cut trick on an aubergine = brinjal',
     see: 'A magician’s CUT TRICK: sawing a purple aubergine in half.',
     alts: ['The purple one, still kaai (raw).'],
+    picNote: 'Imagine a magician’s saw cutting it in half.',
     pron: 'kut-ti-rik-kaai: t on the teeth.', buildsOn: ['kaai'],
     img: 'a magician sawing a big purple aubergine in half on stage' },
 
@@ -328,6 +335,7 @@ window.TAMIL.items.push(
     sound: 's-TAIN + GUY → THEN-GAAI', meaning: 'a guy stained with coconut milk = coconut',
     see: 'A GUY covered in coconut-milk STAINS, holding a cracked coconut.',
     alts: ['s-TAIN: drop the s.'],
+    noImg: true,
     pron: 'tayng-gaai: long e, t on the teeth.', buildsOn: ['kaai'],
     img: 'a man splattered with white coconut milk holding a cracked coconut' },
 
